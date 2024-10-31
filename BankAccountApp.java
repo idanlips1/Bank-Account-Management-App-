@@ -8,19 +8,9 @@ public class BankAccountApp {
         List <Account> accounts = new LinkedList<Account>();
 
         String file = "/Users/idanlipschitz/Downloads/NewBankAccounts.csv";
-        /*
-         * Checking checkacc1 = new Checking("Idan Lipschitz","322657271",1500);
-         * Savings savingsacc2 = new Savings("Ella Jacobi","211328661",10000);
-         * 
-         * checkacc1.showInfo();
-         * savingsacc2.showInfo();
-         * 
-         * checkacc1.compound();
-         * savingsacc2.compound();
-         * 
-         */
-
+       
         // Read a Csv file and create a new account based on that data.
+        
         List<String[]> newAccountHolders = utilities.CSV.read(file);
         for (String[] accountHolder : newAccountHolders) {
             String name = accountHolder[0];
